@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="63.685457">
+<testcase classname="Adactin practicse application end to end testing" name="Launch hotel reservation application and checking with GST calculation" time="63.685457">
+<failure message="java.lang.RuntimeException&#13;&#10;&#9;at com.selenium.baseclass.BaseClass.getAttributeOfTheElement(BaseClass.java:275)&#13;&#10;&#9;at com.cucumber.adactinstepdefinition.AdactinStepDefinition.to_verify_the_total_price_as_price_pernight_no_ofrooms_no_ofdays_GST_in_book_a_hotel_page(AdactinStepDefinition.java:251)&#13;&#10;&#9;at ✽.Then To verify the total-price as (price-pernight*no-ofrooms*no-ofdays+10% GST) in book a hotel page(AdactinPracticeEnd2End.feature:174)&#13;&#10;"><![CDATA[Given Launch hotel reservation application..................................passed
+When User enter the username "rathipriya" in the username field.............passed
+And User enter the password "rathi143" in the password field................passed
+And User click on the login button..........................................passed
+And User select the location in the list....................................passed
+And User select the available hotels in the list............................passed
+And User select the roomtype in the list....................................passed
+And User select the number of rooms in the list.............................passed
+And User select the check in date as "06/07/2019"...........................passed
+And User select the check out date as "07/07/2019"..........................passed
+And User click on the search button to check the Availablity of the selected hotel.passed
+And User click on the radio button for selecting the hotel..................passed
+And User click on the continue button.......................................passed
+And User enter the firstname................................................passed
+And User enter the lastname.................................................passed
+And User enter the billingaddress...........................................passed
+And User enter the credit card number.......................................passed
+And User select the credit card type........................................passed
+And User select the expiry month............................................passed
+And User select the expiry year.............................................passed
+And User enter the cvv number...............................................passed
+And User click on the book now button.......................................passed
+And User click on the logout button.........................................passed
+Then To verify the total-price as (price-pernight*no-ofrooms*no-ofdays+10% GST) in book a hotel page.failed
+
+StackTrace:
+java.lang.RuntimeException
+	at com.selenium.baseclass.BaseClass.getAttributeOfTheElement(BaseClass.java:275)
+	at com.cucumber.adactinstepdefinition.AdactinStepDefinition.to_verify_the_total_price_as_price_pernight_no_ofrooms_no_ofdays_GST_in_book_a_hotel_page(AdactinStepDefinition.java:251)
+	at ✽.Then To verify the total-price as (price-pernight*no-ofrooms*no-ofdays+10% GST) in book a hotel page(AdactinPracticeEnd2End.feature:174)
+]]></failure>
+</testcase>
+</testsuite>
